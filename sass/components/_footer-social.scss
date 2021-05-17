@@ -1,0 +1,30 @@
+.footer-social {
+  margin-top: 12px;
+  margin-left: 70px;
+}
+
+.footer-social__title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--btn-color-text);
+  margin-bottom: 20px;
+}
+
+.footer-social__list {
+  display: inline-flex;
+}
+
+.footer-social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social__link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social__icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--btn-color-text);
+}

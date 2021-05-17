@@ -1,0 +1,21 @@
+.header-contact__list {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contact__list > .header-contact__item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.header-contact__link {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  @extend %text-link;
+  transition: color var(--animation);
+}
+
+.header-contact__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}

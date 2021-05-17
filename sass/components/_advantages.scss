@@ -1,0 +1,35 @@
+.advantage__list {
+  display: flex;
+}
+
+.advantage__list > li:not(:first-child) {
+  margin-left: 30px;
+}
+
+.advantage__svg-box {
+  @include flex(inline-flex);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--alt-bg-color);
+  border-radius: 4px;
+}
+
+.advantage__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.advantage__title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--color-title);
+  margin-bottom: 10px;
+}
+
+.advantage__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.04em;
+}

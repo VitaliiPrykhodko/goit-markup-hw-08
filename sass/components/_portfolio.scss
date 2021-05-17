@@ -1,0 +1,28 @@
+.portfolio {
+  padding-bottom: 94px;
+}
+
+.portfolio__list {
+  display: flex;
+}
+
+.portfolio__list > li:not(:first-child) {
+  margin-left: 30px;
+}
+
+.portfolio__item {
+  position: relative;
+}
+
+.portfolio__title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 27px 0;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  color: var(--btn-color-text);
+  background-color: rgba(47, 48, 58, 0.8);
+  text-transform: uppercase;
+}

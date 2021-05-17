@@ -1,0 +1,32 @@
+.social__list {
+  display: inline-flex;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social__link {
+  @include flex(inline-flex);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.social__icon {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
+
+  .social__link:hover &,
+  .social__link:focus & {
+    fill: var(--btn-color-text);
+    transition: fill var(--animation);
+  }
+}

@@ -1,0 +1,19 @@
+.address__list > li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--btn-color-text);
+}
+
+.address__item {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--color-contact);
+  transition: color var(--animation);
+}
