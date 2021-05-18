@@ -1,16 +1,37 @@
 .client__list {
   display: flex;
   margin-left: -30px;
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -30px;
+  }
+}
+
+.client_title {
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
+  }
 }
 
 .client__item {
-  display: inline-flex;
   margin-left: 30px;
+  @media screen and (max-width: 1199px) {
+    flex-basis: calc((100% - 30px * 2) / 2);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    flex-basis: calc((100% - 30px * 3) / 3);
+  }
 }
 
 .client__link {
   @include flex();
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -19,6 +40,14 @@
   &:focus {
     border: 1px solid var(--accent-color);
     transition: border var(--animation);
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 170px;
   }
 }
 
