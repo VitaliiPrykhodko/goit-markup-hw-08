@@ -1,10 +1,25 @@
 .header-contact__list {
-  display: flex;
-  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .header-contact__list > .header-contact__item:not(:first-child) {
-  margin-left: 50px;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-top: 10px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 50px;
+  }
 }
 
 .header-contact__link {

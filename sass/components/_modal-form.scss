@@ -62,6 +62,11 @@
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 11px;
+    line-height: 1.27;
+  }
 }
 
 .modal__link-contract--color {
